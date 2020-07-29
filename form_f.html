@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>FORM</title>
+	<style type="text/css">
+		input[type=button], input[type=submit], input[type=reset] {
+		  background-color: #4CAF50;
+		  border: none;
+		  color: white;
+		  padding: 16px 32px;
+		  margin: 4px 2px;
+		  margin-left: 22px;
+		  cursor: pointer;
+		}
+		
+	
+		form{
+			font-family: Comic Sans MS;
+			text-align: left;
+			border-style: double;
+			height: 550px;
+			width: 400px;
+			background-color: white;
+			margin: 4px 480px;
+			padding-left: 16px;
+			padding-top: 16px
+		}
+		h1{
+
+			font-family: Comic Sans MS;
+			text-align: center;
+		}
+
+
+
+	</style>
+</head>
+<body bgcolor="sky blue">
+	<h1>FORM</h1>
+	<form method="get">
+
+		<label for="firstname">First Name : </label>
+		<input type="text" name="firstname"  id="firstname"><br><br>
+
+		<label  for="lastname">Last Name : </label>
+		<input type="text" name="lastname" id="lastname"><br><br>
+
+		<label for="email">Email_id : </label>
+		<input type="email" name="email"><br><br>
+
+		<label for="age">Age : </label> 
+		<input type="number" name="age" min="5" max="20"><br><br>
+
+		<label>Gender :  </label><br><br>
+
+		<input type="radio" name="male" value="male" id="male">
+		<label for="male">Male  </label>
+		
+		<input type="radio" name="female" value="female" id="female">
+		<label for="female">Female:</label><br><br>
+
+		<label for="ph_number">Ph_Number :</label>
+		<input type="text" name="ph_number" value="" id="ph_number" minlength="10" maxlength="10" ><br><br>
+
+		<label for="card number">card number:</label>
+		<input type="text" name="card number" id="card number" minlength="16" maxlength="16"><br><br>
+
+		<label for="password">password:</label>
+		<input type="password" name="password" id="password"><br><br>
+
+		<label for="week">Select:</label>
+		<input list="week days"  name="week days"   id="week">
+<datalist id="week days">
+	<option value="sunday">sunday</option>
+	<option value="monday">monday</option>
+	<option value="tuesday">tuesday</option>
+	<option value="wednesday">wednesday</option>
+	<option value="thursday">thursday</option>
+	<option value="friday">friday</option>
+	<option value="saturday">saturday</option>
+
+</datalist><br><br>
+
+
+		<input type="reset" name="reset" value="clear">
+		<input type="submit" name="submit" value="book">
+		<input type="button" name="submit" value="pay"><!--
+		<input type="submit" name="submit" value="back" onclick="table.html" />-->
+
+	</form>
+
+	<a href="index.html"> HOME </a>
+
+	
+</body>
+</html>
